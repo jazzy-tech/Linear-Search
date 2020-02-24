@@ -29,7 +29,7 @@ int main()
 
     return 0;
 
-    int binary_search(const int list[], int listlength, int search Item)
+    int linear_search(const int list[], int listlength, int search Item)
     {
         int first = 0;
         int last = Listlength;
