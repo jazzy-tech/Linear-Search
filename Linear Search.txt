@@ -1,0 +1,52 @@
+
+#include <iostream>
+using namespace std;
+
+int fnLinSearch(int arr[], int iKey, int Num);
+
+int main()
+{
+    int arr[50], iKey, iNum;
+    int i, ipos =0;
+
+    cout<< "\n Enter the size of the array";
+    cin>> iNum;
+    cout<< "\n Enter the elements of the array :\n";
+    for (int i=0; i<iNum; i++){
+    cin>> arr[i];
+    }
+    cout<< "\n Enter the key element search" ;
+    cin>> iKey;
+
+    ipos= fnLinSearch(arr[], iKey, iNum);
+
+
+    if (ipos==-1)
+        cout<< "The key element entered is not FOUND!!";
+    else
+        cout<< "The key element is found at position "<< ipos <<endl;
+
+
+    return 0;
+
+    int binary_search(const int list[], int listlength, int search Item)
+    {
+        int first = 0;
+        int last = Listlength;
+        int mid;
+        bool found = false;
+        while(first <= last &&! found)
+        {
+            mid = (first + last)/2;
+            if (list[mid] == search Item)
+                found = true
+                else if(list[mid] > search Item)
+                last = mid - 1
+                else first = mid + 1
+        }
+        if (found) return mid;
+        else return -1;
+        }
+
+}
+
